@@ -1,0 +1,134 @@
+	customer_id	                      customer_unique_id	              customer_zip_code_prefix	customer_city	        customer_state
+0	06b8999e2fba1a1fbc88172c00ba8bc7	861eff4711a542e4b93843c6dd7febb0	14409	                    franca	               SP
+1	18955e83d337fd6b2def6b18a428ac77	290c77bc529b7ac935b93aa66c333dc3	9790	                    sao bernardo do campo	 SP
+
+
+order_id	                         order_item_id	product_id	                      seller_id	                        shipping_limit_date	 price	freight_value
+0	00010242fe8c5a6d1ba2dd792cb16214	1	            4244733e06e7ecb4970a6e2683c13e61	48436dade18ac8b2bce089ec2a041202	2017-09-19 09:45:35	 58.9	  13.29
+1	00018f77f2f0320c557190d7a144bdd3	1	            e5f2d52b802189ee658865ca93d83a8f	dd7ddc04e1b6c2c614352b383efe2d36	2017-05-03 11:05:13  239.9	19.93
+
+	order_id	payment_sequential	payment_type	payment_installments	payment_value
+0	b81ef226f3fe1789b1e8b2acac839d17	1	credit_card	8	99.33
+1	a9810da82917af2d9aefd1278f1dcfa0	1	credit_card	1	24.39
+
+	order_id	customer_id	order_status	order_purchase_timestamp	order_approved_at	order_delivered_carrier_date	order_delivered_customer_date	order_estimated_delivery_date
+0	e481f51cbdc54678b7cc49136f2d6af7	9ef432eb6251297304e76186b10a928d	delivered	2017-10-02 10:56:33	2017-10-02 11:07:15	2017-10-04 19:55:00	2017-10-10 21:25:13	2017-10-18 00:00:00
+1	53cdb2fc8bc7dce0b6741e2150273451	b0830fb4747a6c6d20dea0b8c802d7ef	delivered	2018-07-24 20:41:37	2018-07-26 03:24:27	2018-07-26 14:31:00	2018-08-07 15:27:45	2018-08-13 00:00:00
+
+	product_id	product_category_name	product_name_lenght	product_description_lenght	product_photos_qty	product_weight_g	product_length_cm	product_height_cm	product_width_cm
+0	1e9e8ef04dbcff4541ed26657ea517e5	perfumaria	40.0	287.0	1.0	225.0	16.0	10.0	14.0
+1	3aa071139cb16b67ca9e5dea641aaa2f	artes	44.0	276.0	1.0	1000.0	30.0	18.0	20.0
+
+	seller_id	seller_zip_code_prefix	seller_city	seller_state
+0	3442f8959a84dea7ee197c632cb2df15	13023	campinas	SP
+1	d1b65fc7debc3361ea86b5f14c68d2e2	13844	mogi guacu	SP
+
+
+	product_category_name	product_category_name_english
+0	beleza_saude	health_beauty
+1	informatica_acessorios	computers_accessories
+
+
+customers    dataframe: 99441   rows
+items        dataframe: 112650  rows
+payments     dataframe: 103886  rows
+orders       dataframe: 99441   rows
+products     dataframe: 32951   rows
+sellers      dataframe: 3095    rows
+categories   dataframe: 71      rows
+
+
+
+number of customers: 96096
+number of orders:    99441
+number of orders per cusotmer: 1.03
+
+order_id	customer_id	order_status	order_purchase_timestamp	order_approved_at	order_delivered_carrier_date	order_delivered_customer_date	order_estimated_delivery_date	customer_unique_id	customer_zip_code_prefix	...	product_description_lenght	product_photos_qty	product_weight_g	product_length_cm	product_height_cm	product_width_cm	product_category	seller_zip_code_prefix	seller_city	seller_state
+0	e481f51cbdc54678b7cc49136f2d6af7	9ef432eb6251297304e76186b10a928d	delivered	2017-10-02 10:56:33	2017-10-02 11:07:15	2017-10-04 19:55:00	2017-10-10 21:25:13	2017-10-18 00:00:00	7c396fd4830fd04220f754e42b4e5bff	3149	...	268.0	4.0	500.0	19.0	8.0	13.0	housewares	9350	maua	SP
+1	e481f51cbdc54678b7cc49136f2d6af7	9ef432eb6251297304e76186b10a928d	delivered	2017-10-02 10:56:33	2017-10-02 11:07:15	2017-10-04 19:55:00	2017-10-10 21:25:13	2017-10-18 00:00:00	7c396fd4830fd04220f754e42b4e5bff	3149	...	268.0	4.0	500.0	19.0	8.0	13.0	housewares	9350	maua	SP
+2	e481f51cbdc54678b7cc49136f2d6af7	9ef432eb6251297304e76186b10a928d	delivered	2017-10-02 10:56:33	2017-10-02 11:07:15	2017-10-04 19:55:00	2017-10-10 21:25:13	2017-10-18 00:00:00	7c396fd4830fd04220f754e42b4e5bff	3149	...	268.0	4.0	500.0	19.0	8.0	13.0	housewares	9350	maua	SP 
+
+	order_purchase_month	order_purchase_year	order_id	period
+16	9	2016	3	9/2016
+19	10	2016	381	10/2016
+22	12	2016	1	12/2016
+
+
+	order_purchase_month	order_id
+order_purchase_year		
+2016	31	385
+2017	78	53539
+2018	45	63677
+
+
+product_category	order_item_id
+0	bed_bath_table	14539
+1	furniture_decor	12055
+2	health_beauty	11426
+3	sports_leisure	10279
+4	computers_accessories	10186
+5	housewares	9530
+6	watches_gifts	6811
+7	garden_tools	6129
+8	telephony	5349
+9	auto	5042
+
+	order_status	customer_state	order_item_id	price	freight_value	payment_sequential	payment_type	payment_installments	payment_value	order_purchase_year	order_purchase_month	order_purchase_day	order_purchase_hour
+0	delivered	SP	1	29.99	8.72	1	credit_card	1	18.12	2017	10	2	10
+1	delivered	SP	1	29.99	8.72	3	voucher	1	2.00	2017	10	2	10
+2	delivered	SP	1	29.99	8.72	2	voucher	1	18.59	2017	10	2	10
+3	delivered	SP	1	29.99	7.78	1	credit_card	3	37.77	2017	8	15	18
+4	delivered	SP	1	29.99	7.78	1	credit_card	1	37.77	2017	8	2	18
+
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 117601 entries, 0 to 117600
+Data columns (total 13 columns):
+ #   Column                Non-Null Count   Dtype  
+---  ------                --------------   -----  
+ 0   order_status          117601 non-null  object 
+ 1   customer_state        117601 non-null  object 
+ 2   order_item_id         117601 non-null  int64  
+ 3   price                 117601 non-null  float64
+ 4   freight_value         117601 non-null  float64
+ 5   payment_sequential    117601 non-null  int64  
+ 6   payment_type          117601 non-null  object 
+ 7   payment_installments  117601 non-null  int64  
+ 8   payment_value         117601 non-null  float64
+ 9   order_purchase_year   117601 non-null  int64  
+ 10  order_purchase_month  117601 non-null  int64  
+ 11  order_purchase_day    117601 non-null  int64  
+ 12  order_purchase_hour   117601 non-null  int64  
+dtypes: float64(3), int64(7), object(3)
+
+
+	order_item_id	price	freight_value	payment_sequential	payment_installments	payment_value	order_purchase_year	order_purchase_month	order_purchase_day	order_purchase_hour
+count	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000	117601.000000
+mean	1.195900	120.824783	20.045990	1.093528	2.939482	172.686752	2017.538193	6.028129	15.549757	14.760002
+std	0.697706	184.479323	15.861315	0.726692	2.774223	267.592290	0.505065	3.229579	8.665830	5.325670
+min	1.000000	0.850000	0.000000	1.000000	0.000000	0.000000	2016.000000	1.000000	1.000000	0.000000
+25%	1.000000	39.900000	13.080000	1.000000	1.000000	60.870000	2017.000000	3.000000	8.000000	11.000000
+50%	1.000000	74.900000	16.290000	1.000000	2.000000	108.210000	2018.000000	6.000000	16.000000	15.000000
+75%	1.000000	134.900000	21.190000	1.000000	4.000000	189.260000	2018.000000	8.000000	23.000000	19.000000
+max	21.000000	6735.000000	409.680000	29.000000	24.000000	13664.080000	2018.000000	12.000000	31.000000	23.000000
+
+
+order_status            False
+customer_state          False
+order_item_id           False
+price                   False
+freight_value           False
+payment_sequential      False
+payment_type            False
+payment_installments    False
+payment_value           False
+order_purchase_year     False
+order_purchase_month    False
+order_purchase_day      False
+order_purchase_hour     False
+dtype: bool
+
+(117601, 48) 
+
+(117601, 13)
+
